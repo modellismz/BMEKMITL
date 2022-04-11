@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BME KMITL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>BME KMITL</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Programs</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Professor</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tuition fee</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>BME KMITL</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Biomedical Engineering</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>King Mongkut's Institute of Technology Ladkrabang</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\ACT1.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\ACT3.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\ACT5.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\ACT4.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\Beamcamp.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\BMEbanner.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Programs.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Biomedical Engineering program (BME) is a full-time 4-year course. It is suitable for students who are seeking to develop their practical engineering skills related to the design and development of solutions directed towards healthcare applications. </p>
+    
+       <p>&nbsp;&nbsp;&nbsp;&nbsp;The BME curriculum includes lecture courses as well as hands-on practical labs and projects in a variety of engineering disciplines with an emphasis on medical, pharmaceutical, and biological sciences. In the first year, students learn fundamental mathematics, physics, chemistry, and biology before moving on to more advanced engineering ideas in the second year. Students can pick one of six paths in their third year, each with a particular emphasis.<br><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;Track 1-3 are taught at the Department of Biomedical Engineering at KMITL, track 4-5 are in conjunction with the Faculty of Medicine and the Faculty of Dentistry at KMITL, respectively, and track 6 is exclusively a dual degree program with University of Glasgow.</p>
+    <p><b>1. Biomedical Instrumentation (BMI) </b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- BMI has an emphasis on the maintenance and calibration of medical devices, device administration, and device design and development. Suitable for students interested in electronic and mechanical engineering.</p>
+    <hr>
+    <p><b>2. Healthcare Information Technology (HIT)</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- HIT has an emphasis on the storage, retrieval, and analysis of hospital information including data networking, signal and image processing, healthcare robot, healthcare drone, and healthcare smart home. Suitable for students interested in maths, programming, and software engineering.</p>
+    <hr>
+    <p><b>3. Biopharmaceutical Engineering (BPHARM)</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- BPHARM has an emphasis on the application of chemical and bioengineering to the development of medicines, biological tissues, biosensors, and bioinformatics amongst others. Suitable for students interested in chemical and bioengineering.</p>
+    <hr>
+    <p><b>4. Pre-medicine (PMED)</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- PMED has an emphasis on preparing students to enter the Medicine program at the Faculty of Medicine at KMITL. Following the first 3 years of studies at the Department of Biomedical Engineering, students will continue their studies at the Faculty of Medicine for another 5 years with a unique set of biomedical engineering skills to broaden their study experiences with an opportunity to pursue two degrees from both engineering and medicine. Students with <em><ins>GPA > 3.5</ins></em> after the first three years and <em><ins>IELTS of 7.0</ins></em> are eligible to apply for this track.</p>
+    <hr>
+    <p><b>5. Pre-dentistry (PDENT)</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- PDENT has an emphasis on preparing students to enter the Dentistry program at the Faculty of Dentistry at KMITL. Following the first 3 years of studies at the Department of Biomedical Engineering, students will continue their studies at the Faculty of Dentistry for another 5 years with a unique set of biomedical engineering skills to broaden their study experiences with an opportunity to pursue two degrees from both engineering and dentistry. Students with <em><ins>GPA > 3.5</ins></em> after the first three years and <em><ins>IELTS of 7.0</ins></em> are eligible to apply for this track.</p>
+    <hr>
+    <p><b>6. Dual Degree Program with University of Glasgow (Glasgow)</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;	- The Glasgow track offers students an ideal opportunity to study at an internationally renowned institution. Following the first 2 years of studies at the Department of Biomedical Engineering, students will gain overseas experiences from the international environment and exposure to state-of-the-art technology by spending another 2 years of studies at the University of Glasgow. After completing all the requirements, students will be conferred double degrees from both KMITL and University of Glasgow. Students with <em><ins>GPA > 3.25</ins></em> after their first and second years and <em><ins>IELTS of 6.5</ins></em> are qualified for this track.</p>
+    
+    
+    
+    
+    
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Professor.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>The program management committee works with the Faculty of Engineering management team on the planning, acquisition, and maintenance of the teaching and learning resources to ensure that they are sufficient and are in good working order. And our professors are experts in all research of Biomedical Engineering.
+    </p>
+    <p><b>Our Faculty & Staff</b>:</p>
+  </div>
+
+  <!-- The Team -->
+ <!--  <div class="w3-row-padding w3-grayscale"> -->
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\CHUweeeee.jpeg" alt="Chuchart" style="width:100%">
+        <div class="w3-container">
+          <h3>Assoc. Prof. Dr. Chuchart Pintavirooj</h3>
+          <p class="w3-opacity">Head of B.Eng. Curriculum</p>
+          <p> Research Interests in image processing, medical devices and<br> X-rays.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\AJAPPe.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Asst. Prof. Dr. Sarinporn Visitsattapongse</h3>
+          <p class="w3-opacity">Head of Department & Head of M.Eng. Curriculum</p>
+          <p>Research Interests in genetic engineering, molecular biology and biochemistry.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="C:\Users\Modellismz\Documents\BME YEAR TWO\Microcontroller\TEST HTML\BMEPAGE\img\modellismz.jpg" alt="Modellismz" style="width:100%">
+        <div class="w3-container">
+          <h3>Mr.Thanawat Kaewboworn</h3>
+          <p class="w3-opacity">Good Student of BME </p>
+          <p>Nothing but cute :3</p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Tuition Fee.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2><i>Tuition fee : <b>90,000 Baht</b> per semester</i></h2>
+  </div>
+  
+<!-- 
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+   -->
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact Us.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Department of Biomedical Engineering. School of Engineering. KMITL.
+1 Soi Chalongkrung 1 Ladkrabang, Bangkok 10520 Thailand or You may send us a message using the form below. </p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by 
+<a href="https://www.facebook.com/Modellismz/" title="Modellismz" target="_blank" class="w3-hover-opacity">Modellismz</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
